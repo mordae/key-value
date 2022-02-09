@@ -24,8 +24,7 @@ source-repository head
 library
     exposed-modules:    Data.KeyValue
     hs-source-dirs:     lib
-    default-language:   Haskell2010
-    default-extensions: FlexibleInstances MultiParamTypeClasses
+    default-language:   GHC2021
     ghc-options:
         -Wall -Wcompat -Wincomplete-uni-patterns -Wunused-packages
         -Wincomplete-record-updates -Widentities -Wredundant-constraints
