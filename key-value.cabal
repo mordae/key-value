@@ -1,0 +1,33 @@
+cabal-version:      3.0
+name:               key-value
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+copyright:          Jan Hamal Dvořák
+maintainer:         mordae@anilinux.org
+author:             Jan Hamal Dvořák
+homepage:           https://github.com/mordae/key-value#readme
+bug-reports:        https://github.com/mordae/key-value/issues
+synopsis:           Class and an operator for key-value tuple composition
+description:
+    Practical configuration management based on process environment,
+    good enough for typical web applications.
+
+category:           System
+build-type:         Simple
+extra-source-files: README.md
+
+source-repository head
+    type:     git
+    location: https://github.com/mordae/key-value
+
+library
+    exposed-modules:    Data.KeyValue
+    hs-source-dirs:     lib
+    default-language:   Haskell2010
+    default-extensions: FlexibleInstances MultiParamTypeClasses
+    ghc-options:
+        -Wall -Wcompat -Wincomplete-uni-patterns -Wunused-packages
+        -Wincomplete-record-updates -Widentities -Wredundant-constraints
+
+    build-depends:      base >=4.13 && <5
