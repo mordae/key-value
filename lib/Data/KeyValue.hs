@@ -15,7 +15,7 @@ where
   -- |
   -- A key-value pair.
   --
-  class KeyValue kv k v where
+  class KeyValue kv k v | kv -> k v where
     (.=) :: k -> v -> kv
     infixr 8 .=
 
